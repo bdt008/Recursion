@@ -5,16 +5,28 @@ number below 0.
 
 Examples:
 
-sumToN(5) // returns 15
-sumToN(1)  // returns 1
-sumToN(9)  // returns 45
-sumToN(-8)  // returns null
 ***********************************************************************/
 
 
 function sumToN(n) {
-  add something to one
+  if (n < 0) {return null};
+
+  return n + sumToN(n-1);
 }
+
+console.log(sumToN(5)) // returns 15
+console.log(sumToN(1))  // returns 1
+console.log(sumToN(9))  // returns 45
+console.log(sumToN(-8))  // returns null
+
+
+// function dump(crate) {
+//   if (crate.content_type === "crate") {
+//       dump(crate.contents);
+//   } else if (crate.content_type === "fruit") {
+//       gentlyUnpackFruit(crate.contents);
+//   }
+
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
