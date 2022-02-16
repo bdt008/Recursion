@@ -14,15 +14,14 @@ iceCreamShop([], 'honey lavender'); // false
 
 
 function iceCreamShop(flavors, favorite) {
-  let flavor = flavors.pop();
-  // console.log(flavor);
+  if(flavors.length <= 0) return false;
 
-  if(flavor === favorite) {
-    return true
-  } else if (flavor !== favorite) {
-    return iceCreamShop(flavors)
-  };
-return false
+  let flavor = flavors.pop()
+
+  if(flavor === favorite) return true;
+
+  return iceCreamShop(flavors, favorite)
+
 
 }
 console.log(iceCreamShop(['pistachio', 'green tea', 'chocolate', 'mint chip'], 'green tea')); // true
