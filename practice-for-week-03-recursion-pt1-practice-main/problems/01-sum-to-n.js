@@ -5,6 +5,10 @@ number below 0.
 
 Examples:
 
+sumToN(5) // returns 15
+sumToN(1)  // returns 1
+sumToN(9)  // returns 45
+sumToN(-8)  // returns null
 ***********************************************************************/
 
 
